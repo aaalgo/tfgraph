@@ -4,7 +4,8 @@ TensorFlow Graph Analsys
 # Receptive Field Size Analysis
 
 This program automatically computes the receptive field size
-of the top-most layer of the type Conv2D or PoolMax.
+of the top-most layer of the type Conv2D or PoolMax (the
+narrowest layer of a FCN or AutoEncoder).
 It is important that the receptive field size is big enough
 to capture the characteristic structure of the underlying
 image.
