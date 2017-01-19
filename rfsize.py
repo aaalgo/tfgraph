@@ -111,10 +111,10 @@ if __name__ == '__main__':
         if op == 'Conv2DBackpropInput':
             assert not_started
             continue
-        print('%s %s %s %s %s => %d' % ( name, op, ksize, strides, padding, rf))
         not_started = False
         _, K1, K2, _ = ksize
         _, S1, S2, _ = strides
+        print('%s: %s ksize=%s stride=%s => %d' % ( name, op, K1, S1, rf))
         assert K1 == K2
         assert S2 == S2
         rf = (rf - 1) * S1 + K1
