@@ -111,7 +111,7 @@ if __name__ == '__main__':
         if op == 'Conv2DBackpropInput':
             assert not_started
             continue
-        print('%s %s %s %s %s' % ( name, op, ksize, strides, padding))
+        print('%s %s %s %s %s => %d' % ( name, op, ksize, strides, padding, rf))
         not_started = False
         _, K1, K2, _ = ksize
         _, S1, S2, _ = strides
