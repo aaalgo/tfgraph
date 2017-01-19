@@ -11,7 +11,7 @@ image.
 
 Usage:
 ```bash
-rfsize.py MODEL
+rfsize.py --model MODEL
 # MODEL is a previously saved model snapshot while training.
 # there should be MODEL.meta, MODEL.index and MODEL.data_...
 ```
