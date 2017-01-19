@@ -43,7 +43,7 @@ class TFGraph(object):
                     if (not ('ksize' in attr)) and len(attr) == 2:
                         # it's likely we have ve hit a Conv2D op, try to find ksize by
                         # actually loading the weighting
-                        if len(node.input)  < 2 or not ('weights' in node.input[1]):
+                        if len(node.input)  < 2 or not ('/read' in node.input[1]):
                             print(node.name)
                             print(node.op)
                             print(node.input)
