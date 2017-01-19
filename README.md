@@ -1,7 +1,7 @@
 TensorFlow Graph Analsys
 ========================
 
-# Receptive Field Size Analysis
+## Receptive Field Size Calculation
 
 This program automatically computes the receptive field size
 of the top-most layer of the type Conv2D or PoolMax (the
